@@ -13,7 +13,8 @@
     "indentWidth": 2,
     "semiColons": false,
     "singleQuote": true,
-    "lineWidth": 120
+    "lineWidth": 120,
+    "exclude": [".svelte-kit/"]
   },
   "imports": {
     "$core/": "./src/lib/core/",
