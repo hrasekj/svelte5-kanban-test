@@ -1,0 +1,23 @@
+{
+  "$schema": "https://deno.land/x/deno@v2.0.0/cli/schemas/config-file.v1.json",
+  "lint": {
+    "include": ["src/"],
+    "rules": {
+      "tags": ["recommended"],
+      "include": [],
+      "exclude": []
+    }
+  },
+  "fmt": {
+    "useTabs": false,
+    "indentWidth": 2,
+    "semiColons": false,
+    "singleQuote": true,
+    "lineWidth": 120
+  },
+  "imports": {
+    "$core/": "./src/lib/core/",
+    "$infrastructure/": "./src/lib/infrastructure/"
+  },
+  "unstable": ["fmt-component"]
+}
