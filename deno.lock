@@ -10,6 +10,7 @@
     "npm:clsx@^2.1.1": "2.1.1",
     "npm:formsnap@^1.0.1": "1.0.1_svelte@5.0.0-next.264__acorn@8.12.1_sveltekit-superforms@2.19.1__@sveltejs+kit@2.7.0___@sveltejs+vite-plugin-svelte@4.0.0-next.8____svelte@5.0.0-next.264_____acorn@8.12.1____vite@5.4.8___svelte@5.0.0-next.264____acorn@8.12.1___vite@5.4.8__svelte@5.0.0-next.264___acorn@8.12.1__@sveltejs+vite-plugin-svelte@4.0.0-next.8___svelte@5.0.0-next.264____acorn@8.12.1___vite@5.4.8__vite@5.4.8_@sveltejs+kit@2.7.0__@sveltejs+vite-plugin-svelte@4.0.0-next.8___svelte@5.0.0-next.264____acorn@8.12.1___vite@5.4.8__svelte@5.0.0-next.264___acorn@8.12.1__vite@5.4.8_@sveltejs+vite-plugin-svelte@4.0.0-next.8__svelte@5.0.0-next.264___acorn@8.12.1__vite@5.4.8_vite@5.4.8",
     "npm:lucide-svelte@0.452": "0.452.0_svelte@5.0.0-next.264__acorn@8.12.1",
+    "npm:mode-watcher@~0.4.1": "0.4.1_svelte@5.0.0-next.264__acorn@8.12.1",
     "npm:postcss@^8.4.47": "8.4.47",
     "npm:svelte@^5.0.0-next.264": "5.0.0-next.264_acorn@8.12.1",
     "npm:sveltekit-superforms@^2.19.1": "2.19.1_@sveltejs+kit@2.7.0__@sveltejs+vite-plugin-svelte@4.0.0-next.8___svelte@5.0.0-next.264____acorn@8.12.1___vite@5.4.8__svelte@5.0.0-next.264___acorn@8.12.1__vite@5.4.8_svelte@5.0.0-next.264__acorn@8.12.1_@sveltejs+vite-plugin-svelte@4.0.0-next.8__svelte@5.0.0-next.264___acorn@8.12.1__vite@5.4.8_vite@5.4.8",
@@ -771,6 +772,12 @@
     "minipass@7.1.2": {
       "integrity": "sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw=="
     },
+    "mode-watcher@0.4.1_svelte@5.0.0-next.264__acorn@8.12.1": {
+      "integrity": "sha512-bNC+1NXmwEFZtziCdZSgP7HFQTpqJPcQn9GwwJQGSf6SBF3neEPYV1uRwkYuAQwbsvsXIYtzaqgedDzJ7D1mhg==",
+      "dependencies": [
+        "svelte@5.0.0-next.264_acorn@8.12.1"
+      ]
+    },
     "mri@1.2.0": {
       "integrity": "sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA=="
     },
@@ -1250,6 +1257,7 @@
         "npm:clsx@^2.1.1",
         "npm:formsnap@^1.0.1",
         "npm:lucide-svelte@0.452",
+        "npm:mode-watcher@~0.4.1",
         "npm:postcss@^8.4.47",
         "npm:svelte@^5.0.0-next.264",
         "npm:sveltekit-superforms@^2.19.1",
