@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Container from '$lib/container/Container.svelte'
   import { pageTitle } from '$lib/stores/pageTitle'
   import { ModeWatcher } from 'mode-watcher'
 
@@ -13,4 +14,8 @@
 
 <ModeWatcher />
 
-{@render children()}
+<Container>
+  <main>
+    {@render children()}
+  </main>
+</Container>
