@@ -17,7 +17,8 @@
     "npm:tailwind-merge@^2.5.3": "2.5.3",
     "npm:tailwind-variants@~0.2.1": "0.2.1_tailwindcss@3.4.13__postcss@8.4.47",
     "npm:tailwindcss@^3.4.13": "3.4.13_postcss@8.4.47",
-    "npm:vite@^5.4.8": "5.4.8"
+    "npm:vite@^5.4.8": "5.4.8",
+    "npm:zod@^3.23.8": "3.23.8"
   },
   "npm": {
     "@alloc/quick-lru@5.2.0": {
@@ -1264,7 +1265,8 @@
         "npm:tailwind-merge@^2.5.3",
         "npm:tailwind-variants@~0.2.1",
         "npm:tailwindcss@^3.4.13",
-        "npm:vite@^5.4.8"
+        "npm:vite@^5.4.8",
+        "npm:zod@^3.23.8"
       ]
     }
   }
