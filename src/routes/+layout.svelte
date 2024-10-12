@@ -1,11 +1,11 @@
 <script lang="ts">
-  import Container from '$lib/container/Container.svelte'
+  import DependenciesProvider  from '$lib/container/DependenciesProvider.svelte'
   import { pageTitle } from '$lib/stores/pageTitle'
   import { ModeWatcher } from 'mode-watcher'
 
   import '../app.css'
 
-  let { children } = $props()
+  let { children } =  $props()
 </script>
 
 <svelte:head>
@@ -14,8 +14,8 @@
 
 <ModeWatcher />
 
-<Container>
+<DependenciesProvider>
   <main>
     {@render children()}
   </main>
-</Container>
+</DependenciesProvider>
