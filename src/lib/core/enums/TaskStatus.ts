@@ -1,8 +1,9 @@
 export const TaskStatus = {
-  Open: 'open',
-  Blocked: 'blocked',
-  InProgress: 'in-progress',
-  Complete: 'complete',
-} as const
+  Backlog: "backlog",
+  Ready: "ready",
+  InProgress: "in-progress",
+  InReview: "in-review",
+  Done: "done",
+} as const;
 
-export type TaskStatus = (typeof TaskStatus)[keyof typeof TaskStatus]
+export type TaskStatus = (typeof TaskStatus)[keyof typeof TaskStatus];
