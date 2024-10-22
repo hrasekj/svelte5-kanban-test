@@ -11,6 +11,7 @@
     "npm:lucide-svelte@0.452": "0.452.0_svelte@5.0.2__acorn@8.13.0",
     "npm:mode-watcher@~0.4.1": "0.4.1_svelte@5.0.2__acorn@8.13.0",
     "npm:postcss@^8.4.47": "8.4.47",
+    "npm:sortablejs@^1.15.3": "1.15.3",
     "npm:svelte@5": "5.0.2_acorn@8.13.0",
     "npm:sveltekit-superforms@^2.20.0": "2.20.0_@sveltejs+kit@2.7.2__@sveltejs+vite-plugin-svelte@4.0.0___svelte@5.0.2____acorn@8.13.0___vite@5.4.9__svelte@5.0.2___acorn@8.13.0__vite@5.4.9_svelte@5.0.2__acorn@8.13.0_zod@3.23.8_@sveltejs+vite-plugin-svelte@4.0.0__svelte@5.0.2___acorn@8.13.0__vite@5.4.9_vite@5.4.9",
     "npm:tailwind-merge@^2.5.3": "2.5.3",
@@ -981,6 +982,9 @@
         "totalist"
       ]
     },
+    "sortablejs@1.15.3": {
+      "integrity": "sha512-zdK3/kwwAK1cJgy1rwl1YtNTbRmc8qW/+vgXf75A7NHag5of4pyI6uK86ktmQETyWRH7IGaE73uZOOBcGxgqZg=="
+    },
     "source-map-js@1.2.1": {
       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
     },
@@ -1252,6 +1256,7 @@
         "npm:lucide-svelte@0.452",
         "npm:mode-watcher@~0.4.1",
         "npm:postcss@^8.4.47",
+        "npm:sortablejs@^1.15.3",
         "npm:svelte@5",
         "npm:sveltekit-superforms@^2.20.0",
         "npm:tailwind-merge@^2.5.3",
