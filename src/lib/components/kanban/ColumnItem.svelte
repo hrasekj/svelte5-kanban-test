@@ -5,17 +5,42 @@
     import { cn } from "$lib/utils/ui";
 
     type Props = {
+        draggable?: boolean;
         item: ITask;
+        // ondragenter?: (event: DragEvent) => void;
+        ondragstart?: (event: DragEvent) => void;
+        ondragend?: (event: DragEvent) => void;
     };
 
-    let { item }: Props = $props();
+    let { item, draggable, ondragstart, ondragend }: Props = $props();
 
     const label = $derived.by(() => {
         return $labels.find((label) => label.value === item.label);
     });
+
+    let dragging = $state(false);
+
+    const handleDragStart = (event: DragEvent) => {
+        setTimeout(() => {
+            dragging = true;
+        }, 0);
+        ondragstart?.(event);
+    };
+
+    const handleDragEnd = (event: DragEvent) => {
+        setTimeout(() => {
+            dragging = false;
+        }, 0);
+        ondragend?.(event);
+    };
 </script>
 
-<Card.Root>
+<Card.Root
+    {draggable}
+    ondragstart={handleDragStart}
+    ondragend={handleDragEnd}
+    class={cn(dragging ? "opacity-15" : "opacity-100", "duration-100 transition-opacity")}
+>
     <Card.Header>
         <Card.Title class="flex flex-row gap-2 items-center text-sm">
             {#if label}
