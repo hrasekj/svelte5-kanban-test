@@ -8,9 +8,6 @@
   export { className as class }
 </script>
 
-<CalendarPrimitive.HeadCell
-  class={cn('text-muted-foreground w-9 rounded-md text-[0.8rem] font-normal', className)}
-  {...$$restProps}
->
+<CalendarPrimitive.HeadCell class={cn('text-muted-foreground w-9 rounded-md text-[0.8rem] font-normal', className)} {...$$restProps}>
   <slot />
 </CalendarPrimitive.HeadCell>

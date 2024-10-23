@@ -7,6 +7,7 @@
 
   const items = [
     { label: 'Overview', href: '/' },
+    { label: 'Kanban', href: '/kanban' },
     { label: 'Projects', href: '/projects' },
     { label: 'Settings', href: '/settings' },
   ]
@@ -16,10 +17,7 @@
   {#each items as { label, href }}
     <a
       {href}
-      class={cn(
-        $page.url.pathname === href ? '' : 'text-muted-foreground',
-        'hover:text-primary text-sm font-medium transition-colors',
-      )}
+      class={cn($page.url.pathname === href ? '' : 'text-muted-foreground', 'hover:text-primary text-sm font-medium transition-colors')}
     >
       {label}
     </a>

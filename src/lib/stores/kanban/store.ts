@@ -89,11 +89,13 @@ export function createKanbanStore(items: ITask[]) {
   for (const [columnId, columnItems] of groupBy(items, (item) => item.status)) {
     store.set(
       columnId,
-      writable<KanbanItem[]>(columnItems.map((item) => ({
-        type: 'task',
-        columnId,
-        item,
-      }))),
+      writable<KanbanItem[]>(
+        columnItems.map((item) => ({
+          type: 'task',
+          columnId,
+          item,
+        })),
+      ),
     )
   }
 
