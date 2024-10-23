@@ -92,7 +92,7 @@
 <Content class={cn('flex-1', className)}>
   <div bind:this={list} class="h-full flex flex-col gap-2">
     {#each items as item, index}
-      <!-- {@debug item, index} -->
+      {@debug item, index}
       {#if item.type === 'task'}
         <ColumnItem {index} item={item.item} draggable={true} />
       {/if}

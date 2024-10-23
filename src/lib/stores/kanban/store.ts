@@ -35,9 +35,9 @@ export class KanbanStore extends SvelteMap<string, KanbanItem[]> {
     const [item] = columnItems.splice(fromIndex, 1)
     columnItems.splice(toIndex, 0, item)
 
-    setTimeout(() => {
-      this.set(columnId, columnItems.slice())
-    }, 1000)
+    // setTimeout(() => {
+    this.set(columnId, columnItems.slice())
+    // }, 1000)
   }
 
   moveItem({ fromColumn, toColumn, itemId }) {

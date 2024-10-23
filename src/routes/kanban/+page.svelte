@@ -142,13 +142,12 @@
 </script>
 
 <button
+  class="bg-blue-500 text-white px-4 py-2 rounded-md"
   onclick={() => {
-    console.log(
-      'Le click',
-      items.map((item) => ({ ...item })),
-    )
-    kanbanStore.load(items)
-  }}>Foo the store</button
+    const clone = items.map((item) => ({ ...item }))
+    console.log('Le click', clone)
+    kanbanStore.load(clone)
+  }}>Reload store</button
 >
 
 <main class="flex-1 flex space-y-4 p-8 pt-6">
