@@ -7,12 +7,13 @@
     type Props = {
         draggable?: boolean;
         item: ITask;
+        index: number;
         // ondragenter?: (event: DragEvent) => void;
         ondragstart?: (event: DragEvent) => void;
         ondragend?: (event: DragEvent) => void;
     };
 
-    let { item, draggable, ondragstart, ondragend }: Props = $props();
+    let { item, index, draggable, ondragstart, ondragend }: Props = $props();
 
     const label = $derived.by(() => {
         return $labels.find((label) => label.value === item.label);
@@ -33,6 +34,8 @@
         }, 0);
         ondragend?.(event);
     };
+
+    $inspect("ColumnItem.index", index);
 </script>
 
 <Card.Root
